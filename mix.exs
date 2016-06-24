@@ -30,4 +30,17 @@ defmodule Ampex.Mixfile do
     [{:httpoison, "~> 0.8.3"},
     {:sweet_xml, "~> 0.6.1"}]
   end
+
+  defp description do
+    """
+    Elixir Library for interacting with Amazon Product Advertising API
+    """
+  end
+
+  defp package do
+    [name: :ampex,
+     maintainers: ["Thomas Geselle"],
+     licenses: ["Apache 2.0"],
+     links: %{"GitHub" => "https://github.com/tgeselle/ampex"}]
+  end
 end
