@@ -5,8 +5,8 @@ defmodule Ampex.Mixfile do
     [app: :ampex,
      version: "0.1.0",
      elixir: "~> 1.3",
-     build_embedded: Mix.env == :prod,
-     start_permanent: Mix.env == :prod,
+     description: description(),
+     package: package(),
      deps: deps()]
   end
 
@@ -41,6 +41,7 @@ defmodule Ampex.Mixfile do
     [name: :ampex,
      maintainers: ["Thomas Geselle"],
      licenses: ["Apache 2.0"],
+     files: ["lib", "mix.exs", "README*"],
      links: %{"GitHub" => "https://github.com/tgeselle/ampex"}]
   end
 end
