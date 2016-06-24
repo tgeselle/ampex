@@ -4,13 +4,13 @@ Elixir Library for interacting with Amazon Product Advertising API
 
 ## Installation
 
-  Add `ampex` to your list of dependencies in `mix.exs`:
+Add `ampex` to your list of dependencies in `mix.exs`:
 
-  ```elixir
+```elixir
   def deps do
     [{:ampex, "~> 0.1.0"}]
   end
-    ```
+```
 
 ## Usage
 
