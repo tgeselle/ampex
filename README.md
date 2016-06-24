@@ -1,24 +1,29 @@
 # Ampex
 
-**TODO: Add description**
+Elixir Library for interacting with Amazon Product Advertising API
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+  Add `ampex` to your list of dependencies in `mix.exs`:
 
-  1. Add `ampex` to your list of dependencies in `mix.exs`:
-
-    ```elixir
-    def deps do
-      [{:ampex, "~> 0.1.0"}]
-    end
+  ```elixir
+  def deps do
+    [{:ampex, "~> 0.1.0"}]
+  end
     ```
 
-  2. Ensure `ampex` is started before your application:
+## Usage
 
-    ```elixir
-    def application do
-      [applications: [:ampex]]
-    end
-    ```
+### FindPosition
 
+Find position of a product:
+```elixir
+  Ampex.find_position(asin, keywords, max_pages \\ 10, wait_call \\ 1100, page \\ 1, position \\ 0)
+```
+
+### ItemLookup
+
+Only returns title and image:
+```elixir
+  Ampex.item_lookup(asin)
+```
