@@ -21,7 +21,7 @@ defmodule Ampex.ItemSearch do
         page = page + 1
         find_position(asin, keywords, max_pages, wait_call, page, position)
       else
-        position = ((page - 1) * 10) + found
+        position = ((page - 1) * 10) + found + 1
       end
     else
       ">100"
