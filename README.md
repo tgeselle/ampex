@@ -12,6 +12,14 @@ Add `ampex` to your list of dependencies in `mix.exs`:
   end
 ```
 
+## Config
+
+Add these 3 environment variables to you system:
+
+AWS_ASSOCIATE
+AWS_KEY
+AWS_SECRET
+
 ## Usage
 
 ### FindPosition
